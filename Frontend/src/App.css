@@ -17,3 +17,11 @@ table {
 input {
   height: 25px;
 }
+
+.codigoInput {
+  min-width: 320px;
+}
+
+.largeButton {
+  min-width: 640px;
+}

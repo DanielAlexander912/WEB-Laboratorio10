@@ -11,6 +11,7 @@ import { updateUser } from '../Controllers/updateUser.js';
 import { deleteUser } from '../Controllers/deleteUser.js';
 
 import { getCustomers } from '../Controllers/getCustomers.js';
+import { createSale } from '../Controllers/createSale.js';
 import { getSales } from '../Controllers/getSales.js';
 import { getCustomerByCode } from "../Controllers/getCustomers.js";
 import { getReport } from '../Controllers/getReport.js';
@@ -29,6 +30,7 @@ routes.put('/users/:id', verifyToken, updateUser);
 routes.delete('/users/:id', verifyToken, deleteUser);
 
 routes.get('/customers', getCustomers);
+routes.post('/sales', createSale);
 routes.get('/sales', getSales);
 routes.get('/customers/:code', getCustomerByCode);
 routes.get('/report', getReport);
